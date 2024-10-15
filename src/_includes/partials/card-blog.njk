@@ -1,5 +1,5 @@
-<custom-card clickable class="{% if item.data.tags contains 'Red' %} red-background {% endif %}">  
-  <h2 slot="headline">
+<custom-card clickable>  
+  <h2 slot="headline" class="{% if item.data.tags contains 'Red' %} red-text {% endif %}">
     <a href="{{ item.url | url }}">{{ item.data.title }}</a>
   </h2>
   <span slot="date"> {% include "partials/date.njk" %} </span>
