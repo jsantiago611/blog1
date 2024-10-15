@@ -1,4 +1,4 @@
-<custom-card clickable class="{% if item.data.tags contains 'Red' %}red-background{% endif %}">
+<custom-card clickable class="{% if item.data.tags contains 'Red' %} red-background {% endif %}">  
   <h2 slot="headline">
     <a href="{{ item.url | url }}">{{ item.data.title }}</a>
   </h2>
