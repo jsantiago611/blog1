@@ -136,3 +136,7 @@ a:hover {
     display: none;
   }
 }
+
+.work-tag {
+  color: blue;
+}
