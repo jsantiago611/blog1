@@ -1,4 +1,34 @@
 @font-face {
+  font-family: 'GT-Super';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    local(''),
+    url('/assets/fonts/GT-Super/GT-Super-Text-Book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'GT-Super';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    local(''),
+    url('/assets/fonts/GT-Super/GT-Super-Text-Book-Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'GT-Super';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src:
+    local(''),
+    url('/assets/fonts/GT-Super/GT-Super-Text-Medium.woff') format('woff');
+}
+
+@font-face {
   font-family: 'Family';
   font-style: normal;
   font-display: swap;
