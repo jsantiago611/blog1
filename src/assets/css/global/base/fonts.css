@@ -1,4 +1,13 @@
 @font-face {
+  font-family: 'Family';
+  font-style: normal;
+  font-display: swap;
+  src:
+    local(''),
+    url('/assets/fonts/family-bold-subset.woff2') format('woff2');
+}
+
+@font-face {
   font-family: 'Inclusive Sans';
   font-style: normal;
   font-display: swap;
