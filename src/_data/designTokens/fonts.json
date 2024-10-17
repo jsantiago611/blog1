@@ -5,7 +5,7 @@
     {
       "name": "Display",
       "description": "Display font stack for headings and large text. ",
-      "value": ["GT-Super", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
+      "value": ["StyreneA", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
     },
     {
       "name": "Base",
