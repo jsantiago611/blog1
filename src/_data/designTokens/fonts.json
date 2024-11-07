@@ -5,18 +5,18 @@
     {
       "name": "Display",
       "description": "Display font stack for headings and large text. ",
-      "value": ["styreneA", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
+      "value": ["Tarnac", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
     },
     {
       "name": "Base",
       "description": "Base font stack for body text. Inclusive Sans is a free, friendly and clean typeface made for enhanced legibility. oliviaking.com/inclusive-sans",
-      "value": ["tiemposText", "system-ui", "sans-serif"]
+      "value": ["copernicus", "system-ui", "sans-serif"]
     },
     {
       "name": "Mono",
       "description": "Monospace font for code and preformatted text.",
       "value": [
-        "SoehneMono",
+        "Pitch",
         "ui-monospace",
         "Cascadia Code",
         "Source Code Pro",
