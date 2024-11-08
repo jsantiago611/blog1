@@ -9,7 +9,7 @@ Adjust fallbacks if modern color syntax not supported for text and bg variants. 
   --transition-duration: 250ms;
   --transition-timing: ease;
   --wrapper-width: 85rem;
-  --tracking: -0.05ch;
+  --tracking: -0.01ch;
   --tracking-s: -0.075ch;
   --tracking-wide: 0.05ch;
 
