@@ -142,7 +142,7 @@
 
 @font-face {
   font-family: 'Tarnac';
-  src: url('/assets/fonts/Tarnac-Bold.woff2') format("woff2");
+  src: url('/assets/fonts/TarnacSans-Bold.woff2') format("woff2");
   font-display: swap;
   font-style: normal;
   letter-spacing: var(--tracking) !important;
