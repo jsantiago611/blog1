@@ -36,6 +36,7 @@ h3 {
   font-weight: var(--font-extra-bold);
   line-height: 1.2;
   letter-spacing: var(--tracking-s);
+  font-feature-settings: "ss02";
 }
 
 h1 {
