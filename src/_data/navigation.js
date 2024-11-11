@@ -4,11 +4,11 @@ export default {
       text: 'About',
       url: '/about/'
     },
-    {
+    /*{
       text: 'Docs',
       url: '/get-started/'
     },
-    /*{
+    {
       text: 'Built with',
       url: '/built-with/'
     },*/
