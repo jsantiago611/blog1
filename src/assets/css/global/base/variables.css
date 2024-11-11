@@ -10,10 +10,10 @@ Adjust fallbacks if modern color syntax not supported for text and bg variants. 
   --transition-timing: ease;
   --wrapper-width: 85rem;
   --tracking: -0.01ch;
-  --tracking-s: -0.075ch;
+  --tracking-s: -0.05ch;
   --tracking-wide: 0.05ch;
 
-  --gradient-rainbow: linear-gradient(90deg, #cf4662 10%, #fbbe25 30%, #62c95c 50%, #08bccb 75%, #a977d5 90%);
+  --gradient-rainbow: linear-gradient(90deg, var(--color-primary) , var(--color-secondary), var(--color-tertiary));
   --gradient-conic: conic-gradient(
     var(--color-primary) 0 28%,
     var(--color-secondary) 0 67%,
