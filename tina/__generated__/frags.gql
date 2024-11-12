@@ -4,4 +4,5 @@ fragment PostsParts on Posts {
   description
   date
   tags
+  body
 }

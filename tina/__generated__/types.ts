@@ -170,6 +170,7 @@ export type Posts = Node & Document & {
   description?: Maybe<Scalars['String']['output']>;
   date?: Maybe<Scalars['String']['output']>;
   tags?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
+  body?: Maybe<Scalars['JSON']['output']>;
   id: Scalars['ID']['output'];
   _sys: SystemInfo;
   _values: Scalars['JSON']['output'];
@@ -190,11 +191,18 @@ export type DatetimeFilter = {
   in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
 };
 
+export type RichTextFilter = {
+  startsWith?: InputMaybe<Scalars['String']['input']>;
+  eq?: InputMaybe<Scalars['String']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+};
+
 export type PostsFilter = {
   title?: InputMaybe<StringFilter>;
   description?: InputMaybe<StringFilter>;
   date?: InputMaybe<DatetimeFilter>;
   tags?: InputMaybe<StringFilter>;
+  body?: InputMaybe<RichTextFilter>;
 };
 
 export type PostsConnectionEdges = {
@@ -280,16 +288,17 @@ export type PostsMutation = {
   description?: InputMaybe<Scalars['String']['input']>;
   date?: InputMaybe<Scalars['String']['input']>;
   tags?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  body?: InputMaybe<Scalars['JSON']['input']>;
 };
 
-export type PostsPartsFragment = { __typename: 'Posts', title?: string | null, description?: string | null, date?: string | null, tags?: Array<string | null> | null };
+export type PostsPartsFragment = { __typename: 'Posts', title?: string | null, description?: string | null, date?: string | null, tags?: Array<string | null> | null, body?: any | null };
 
 export type PostsQueryVariables = Exact<{
   relativePath: Scalars['String']['input'];
 }>;
 
 
-export type PostsQuery = { __typename?: 'Query', posts: { __typename: 'Posts', id: string, title?: string | null, description?: string | null, date?: string | null, tags?: Array<string | null> | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
+export type PostsQuery = { __typename?: 'Query', posts: { __typename: 'Posts', id: string, title?: string | null, description?: string | null, date?: string | null, tags?: Array<string | null> | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
 
 export type PostsConnectionQueryVariables = Exact<{
   before?: InputMaybe<Scalars['String']['input']>;
@@ -301,7 +310,7 @@ export type PostsConnectionQueryVariables = Exact<{
 }>;
 
 
-export type PostsConnectionQuery = { __typename?: 'Query', postsConnection: { __typename?: 'PostsConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'PostsConnectionEdges', cursor: string, node?: { __typename: 'Posts', id: string, title?: string | null, description?: string | null, date?: string | null, tags?: Array<string | null> | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
+export type PostsConnectionQuery = { __typename?: 'Query', postsConnection: { __typename?: 'PostsConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'PostsConnectionEdges', cursor: string, node?: { __typename: 'Posts', id: string, title?: string | null, description?: string | null, date?: string | null, tags?: Array<string | null> | null, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
 
 export const PostsPartsFragmentDoc = gql`
     fragment PostsParts on Posts {
@@ -310,6 +319,7 @@ export const PostsPartsFragmentDoc = gql`
   description
   date
   tags
+  body
 }
     `;
 export const PostsDocument = gql`

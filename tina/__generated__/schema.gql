@@ -91,6 +91,7 @@ type Posts implements Node & Document {
   description: String
   date: String
   tags: [String]
+  body: JSON
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
@@ -111,11 +112,18 @@ input DatetimeFilter {
   in: [String]
 }
 
+input RichTextFilter {
+  startsWith: String
+  eq: String
+  exists: Boolean
+}
+
 input PostsFilter {
   title: StringFilter
   description: StringFilter
   date: DatetimeFilter
   tags: StringFilter
+  body: RichTextFilter
 }
 
 type PostsConnectionEdges {
@@ -153,6 +161,7 @@ input PostsMutation {
   description: String
   date: String
   tags: [String]
+  body: JSON
 }
 
 schema {
