@@ -10,7 +10,7 @@
     {
       "name": "Base",
       "description": "Base font stack for body text. Inclusive Sans is a free, friendly and clean typeface made for enhanced legibility. oliviaking.com/inclusive-sans",
-      "value": ["TiemposText", "system-ui", "sans-serif"]
+      "value": ["Copernicus", "system-ui", "sans-serif"]
     },
     {
       "name": "Mono",
